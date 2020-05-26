@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/sass/overlay.scss">
+    <title>Overlay Image Preview</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Overlay Image Preview</h1>
+
+        <h2>Usage</h2>
+
+        <h2>Demo</h2>
+
+        <div class="mx-auto">
+            <a href="https://picsum.photos/536/354" type="button" data-toggle="overlay" data-caption="Test Caption"
+                class="btn btn-primary mx-auto">
+                Show overlay
+            </a>
+        </div>
+    </div>
+
+    <script src="src/javascript/Overlay.ts"></script>
+    <script>
+        (function () {
+            const element = document.querySelector('[data-toggle="overlay"]');
+
+            element.addEventListener("click", (event) => {
+                event.preventDefault();
+
+                const overlay = new Overlay(element, (element) => {
+                    return element.dataset.caption;
+                });
+                overlay.open();
+            });
+        })();
+    </script>
+</body>
+
+</html>
