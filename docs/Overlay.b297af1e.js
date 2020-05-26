@@ -11,4 +11,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"sdFF":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var t=require("./background"),r=e(require("./loading")),o=e(require("./content")),a=e(require("./image")),i=e(require("./caption")),n=function(){function e(e,t){this.element=e,this.captionCallback=t}return e.prototype.open=function(){var e=this,n=this.element.getAttribute("href");document.querySelector("body").style.overflow="hidden",t.create(),r.default(),o.default();var u=new Image;u.src=n,u.onload=function(){var t=u.naturalWidth,r=u.naturalHeight;if(document.querySelector(".overlay-loading").remove(),a.default(u,t,r),void 0!==e.captionCallback){var o=e.captionCallback(e.element);i.default(o,!0)}}},e}();exports.default=n,module.exports=n;
 },{"./background":"b5zK","./loading":"sNz8","./content":"MJT3","./image":"A3nJ","./caption":"ZyHG"}]},{},["sdFF"], "Overlay")
-//# sourceMappingURL=/Overlay.b297af1e.js.map
+//# sourceMappingURL=Overlay.b297af1e.js.map
