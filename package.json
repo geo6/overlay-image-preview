@@ -7,8 +7,8 @@
     "serve:demo": "parcel serve demo.html --global Overlay --out-dir demo",
     "build:demo": "parcel build demo.html --global Overlay --out-dir docs --out-file index.html --public-url .",
     "build": "parcel build src/javascript/Overlay.ts --global Overlay --out-file overlay.js",
-    "test": "eslint index.js src/javascript/ --ext ts",
-    "fix": "eslint index.js src/javascript/ --ext ts --fix"
+    "test": "eslint Overlay.js src/javascript/ --ext ts",
+    "fix": "eslint Overlay.js src/javascript/ --ext ts --fix"
   },
   "repository": {
     "type": "git",
