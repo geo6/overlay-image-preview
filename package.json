@@ -18,6 +18,7 @@
   "bugs": {
     "url": "https://github.com/geo6/overlay-image-preview/issues"
   },
+  "homepage": "https://geo6.github.io/overlay-image-preview/",
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^14.0.5",
