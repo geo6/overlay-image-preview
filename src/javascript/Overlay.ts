@@ -1,5 +1,7 @@
 "use strict";
 
+import "../sass/overlay.scss";
+
 import { create as createBackground } from "./background";
 import createLoading from "./loading";
 import createContent from "./content";
