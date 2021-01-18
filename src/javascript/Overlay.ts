@@ -7,6 +7,7 @@ import createLoading from "./loading";
 import createContent from "./content";
 import createImage from "./image";
 import createCaption from "./caption";
+import createTools from "./tools";
 
 class Overlay {
   private element: HTMLElement;
@@ -41,6 +42,8 @@ class Overlay {
 
         createCaption(caption, true);
       }
+
+      createTools();
     };
   }
 }

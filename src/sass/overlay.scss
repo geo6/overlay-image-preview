@@ -38,6 +38,29 @@
     & > .overlay-caption {
       color: #fff;
       text-align: center;
+      z-index: 9900;
+    }
+
+    & > .overlay-tools {
+      text-align: center;
+      margin-top: 1.5rem;;
+      z-index: 9900;
+
+      button {
+        color: #f8f9fa;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        padding: .25rem .5rem;
+        font-size: 1rem;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
     }
   }
 
