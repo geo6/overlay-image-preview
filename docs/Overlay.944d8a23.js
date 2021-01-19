@@ -2,7 +2,7 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 
 },{"./icons.eot":[["icons.fb9a023e.eot","iDt6"],"iDt6"],"./icons.woff2":[["icons.d04b5d45.woff2","ppnc"],"ppnc"],"./icons.woff":[["icons.a501b408.woff","e6yT"],"e6yT"],"./icons.ttf":[["icons.edab68aa.ttf","JeNV"],"JeNV"],"./icons.svg":[["icons.993a51e0.svg","dqvx"],"dqvx"]}],"vbhz":[function(require,module,exports) {
 
-},{"../../node_modules/mono-icons/iconfont/icons.css":"o5Tz"}],"b5zK":[function(require,module,exports) {
+},{"mono-icons/iconfont/icons.css":"o5Tz"}],"b5zK":[function(require,module,exports) {
 "use strict";function e(){document.body.style.overflow="hidden";var e=document.createElement("div");e.className="overlay",e.addEventListener("click",function(){o(),document.querySelector("body").style.overflow=""}),document.body.append(e)}function o(){var e=document.querySelector(".overlay");null!==e&&e.remove()}Object.defineProperty(exports,"__esModule",{value:!0}),exports.destroy=exports.create=void 0,exports.create=e,exports.destroy=o;
 },{}],"sNz8":[function(require,module,exports) {
 "use strict";function e(){var e=document.createElement("div");e.className="overlay-loading",e.innerText="Loading...",document.querySelector(".overlay").append(e)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=e;
@@ -17,4 +17,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"sdFF":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0,require("../sass/overlay.scss");var t=require("./background"),r=e(require("./loading")),o=e(require("./content")),a=e(require("./image")),u=e(require("./caption")),i=e(require("./tools")),l=function(){function e(e,t){this.element=e,this.captionCallback=t}return e.prototype.open=function(){var e=this,l=this.element.getAttribute("href");document.querySelector("body").style.overflow="hidden",t.create(),r.default(),o.default();var n=new Image;n.src=l,n.onload=function(){var t=n.naturalWidth,r=n.naturalHeight;if(document.querySelector(".overlay-loading").remove(),a.default(n,t,r),void 0!==e.captionCallback){var o=e.captionCallback(e.element);u.default(o,!0)}i.default()}},e}();exports.default=l,module.exports=l;
 },{"../sass/overlay.scss":"vbhz","./background":"b5zK","./loading":"sNz8","./content":"MJT3","./image":"A3nJ","./caption":"ZyHG","./tools":"ngaB"}]},{},["sdFF"], "Overlay")
-//# sourceMappingURL=Overlay.33248639.js.map
+//# sourceMappingURL=Overlay.944d8a23.js.map
