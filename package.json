@@ -6,7 +6,7 @@
   "scripts": {
     "serve:demo": "parcel serve demo.html --global Overlay --out-dir demo",
     "build:demo": "parcel build demo.html --global Overlay --out-dir docs --out-file index.html --public-url .",
-    "build": "parcel build src/javascript/Overlay.ts --global Overlay --out-file overlay.js",
+    "build": "parcel build src/javascript/Overlay.ts --global Overlay --out-file overlay.js --public-url .",
     "lint": "eslint src/javascript/ --ext ts",
     "lint:fix": "eslint src/javascript/ --ext ts --fix"
   },
