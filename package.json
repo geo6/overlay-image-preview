@@ -4,9 +4,11 @@
   "description": "",
   "main": "src/javascript/Overlay.ts",
   "scripts": {
-    "serve:demo": "parcel serve demo.html --global Overlay --out-dir demo",
-    "build:demo": "parcel build demo.html --global Overlay --out-dir docs --out-file index.html --public-url .",
-    "build": "parcel build src/javascript/Overlay.ts --global Overlay --out-file overlay.js --public-url .",
+    "demo:serve": "parcel serve demo.html --global Overlay --out-dir demo",
+    "demo:export": "rm -rf \"docs/\" && parcel build demo.html --global Overlay --out-dir docs --out-file index.html --public-url .",
+    "build": "concurrently \"rm -rf dist/\" \"npm:build:js\" \"npm:build:css\"",
+    "build:js": "parcel build src/javascript/Overlay.ts --global Overlay --out-file overlay.js --public-url .",
+    "build:css": "parcel build src/sass/overlay.scss --public-url .",
     "lint": "eslint src/javascript/ --ext ts",
     "lint:fix": "eslint src/javascript/ --ext ts --fix"
   },
@@ -26,6 +28,7 @@
     "@types/node": "^16.6.1",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
+    "concurrently": "^6.2.1",
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.0",
